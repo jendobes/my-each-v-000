@@ -9,6 +9,7 @@ def my_each(array)
 else array.length = 0
   puts "Array is empty."
 end
+end
 
 collection = [1, 2, 3, 4]
 my_each(collection) do |i|
