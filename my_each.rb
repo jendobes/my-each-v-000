@@ -1,14 +1,14 @@
 def my_each(array)
   if array.length > 0
-  x=0
-  while x < array.length
-    x += 1
-    yield
-  end
-  array
+    x=0
+    while x < array.length
+      x += 1
+      yield
+      end
+      array
 else array.length = 0
   puts "Array is empty."
-end
+  end
 end
 
 collection = [1, 2, 3, 4]
