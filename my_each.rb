@@ -1,15 +1,17 @@
 def my_each(array)
-  if array.length > 0
+  if block_given?
     x=0
-    while x < array.length
-    x += 1
-    yield
+
+    while i < array.length
+      yield array[i]
+      i += 1
     end
     array
-else array.length = 0
-  puts "Array is empty."
+  else
+    puts "No block was given."
   end
 end
+
 
 collection = [1, 2, 3, 4]
 my_each(collection) do |i|
